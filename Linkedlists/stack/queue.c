@@ -54,7 +54,7 @@ int menu(){
     printf("2.Autorizar a decolagem do primeiro avião da fila\n");
     printf("3.Adicionar um avião a lista de espera\n");
     printf("4.Listar todos os aviões na fila de espera\n ");
-    printf("5.Listar as características do primeiro avião da fila");
+    printf("5.Listar as características do primeiro avião da fila\n");
     scanf("%d",&opc);
     return(opc);
 }
