@@ -74,8 +74,6 @@ void decolarAviao(struct Fila* fila) {
         free(aviaoDecolado);
     }
 }
-
-// Função para listar as características do primeiro avião da fila
 void listarPrimeiroAviao(struct Fila* fila) {
     if (filaVazia(fila)) {
         printf("Não há aviões na fila de espera.\n");
@@ -130,6 +128,6 @@ int main() {
                 printf("Opção inválida. Tente novamente.\n");
         }
     }
-
+    free(filaEspera);
     return 0;
 }
