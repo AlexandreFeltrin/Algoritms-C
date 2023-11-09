@@ -107,7 +107,6 @@ void posOrdem(struct No* raiz) {
     }
 }
 
-
 void liberar(struct No* raiz) {
     if (raiz != NULL) {
         liberar(raiz->esquerda);
@@ -118,8 +117,8 @@ void liberar(struct No* raiz) {
 
 int main() {
     struct No* raiz = NULL;
-    int choice, num;
-    struct No* found;
+    int opc, num;
+    struct No* p;
 
     while (1) {
         printf("\nEscolha uma opção:\n");
@@ -131,9 +130,9 @@ int main() {
         printf("6. Listar Nohs pós Ordem\n");
         printf("7. Sair do Programa\n");
 
-        scanf("%d", &choice);
+        scanf("%d", &opc);
 
-        switch (choice) {
+        switch (opc) {
             case 1:
                 printf("Digite o valor a ser inserido: ");
                 scanf("%d", &num);
@@ -147,8 +146,8 @@ int main() {
             case 3:
                 printf("Digite o valor a ser localizado: ");
                 scanf("%d", &num);
-                found = procurarNo(raiz, num);
-                if (found != NULL) {
+                p = procurarNo(raiz, num);
+                if (p != NULL) {
                     printf("%d encontrado na árvore.\n", num);
                 } else {
                     printf("%d não encontrado na árvore.\n", num);

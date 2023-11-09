@@ -42,7 +42,7 @@ void adicionarAviao(struct Fila* fila, int numeroAviao, char modelo[]) {
     printf("Avião %d (%s) adicionado à fila de espera.\n", numeroAviao, modelo);
 }
 
-// Função para listar o número de aviões aguardando na fila de decolagem
+
 int contarAvioesNaFila(struct Fila* fila) {
     int contador = 0;
     struct No* atual = fila->frente;
@@ -53,7 +53,7 @@ int contarAvioesNaFila(struct Fila* fila) {
     return contador;
 }
 
-// Função para listar todos os aviões na fila de espera
+
 void listarAvioesNaFila(struct Fila* fila) {
     struct No* atual = fila->frente;
     printf("Aviões na fila de espera:\n");
